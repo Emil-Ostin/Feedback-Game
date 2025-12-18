@@ -3,53 +3,100 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Camera cam;
-
     [SerializeField] float moveSpeed = 10f;
+    [SerializeField] float jumpForce = 12f;
+
+    [SerializeField] float fallGravityMultiplier = 2.5f;
+    [SerializeField] float lowJumpMultiplier = 2f;
+
+
+    Rigidbody2D rb;
+    Camera cam;
 
     InputAction moveAction;
+    InputAction jumpAction;
 
-    Vector3 moveVector;
-    void Start()
+    bool isGrounded = true; // simple ground check
+
+    void Awake()
     {
-        moveAction = InputSystem.actions.FindAction ("Move");
-
+        rb = GetComponent<Rigidbody2D>();
         cam = Camera.main;
+
+        moveAction = InputSystem.actions.FindAction("Move");
+        jumpAction = InputSystem.actions.FindAction("Jump");
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnEnable()
+    {
+        moveAction.Enable();
+        jumpAction.Enable();
+    }
+
+    void OnDisable()
+    {
+        moveAction.Disable();
+        jumpAction.Disable();
+    }
+
+    void FixedUpdate()
     {
         MovePlayer();
-
-        // Vector3 mousePos = (Vector2)cam.ScreenToWorldPoint(Input.mousePosition);
-        // float angleRad = Mathf.Atan2(mousePos.y - transform.position.y, mousePos.x - transform.position.x);
-        //float angleDeg = (180 / Mathf.PI) * angleRad - 90; // Offset this by 90 Degrees
-
-        //transform.rotation = Quaternion.Euler(0f, 0f, angleDeg);
-        //Debug.DrawLine(transform.position, mousePos, Color.white, Time.deltaTime);
-
-        Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-
-        if (mousePos.x > transform.position.x)
-        {
-            // Face right
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        else
-        {
-            // Face left
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
+        BetterJump();
     }
 
+    void Update()
+    {
+        Jump();
+        FlipPlayer();
+    }
 
     void MovePlayer()
     {
-        moveVector = moveAction.ReadValue<Vector2>();
-        transform.position += moveVector * moveSpeed * Time.deltaTime;
+        Vector2 moveInput = moveAction.ReadValue<Vector2>();
+        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+    }
 
-      
-     
+    void Jump()
+    {
+        if (jumpAction.WasPressedThisFrame() && isGrounded)
+        {
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            isGrounded = false;
+        }
+    }
+
+    void BetterJump()
+    {
+        if (rb.linearVelocity.y < 0)
+        {
+            // Falling
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallGravityMultiplier - 1) * Time.fixedDeltaTime;
+        }
+        else if (rb.linearVelocity.y > 0 && !jumpAction.IsPressed())
+        {
+            // Jump button released early
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.fixedDeltaTime;
+        }
+    }
+
+
+    void FlipPlayer()
+    {
+        Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+        if (mousePos.x > transform.position.x)
+            transform.localScale = new Vector3(1, 1, 1);
+        else
+            transform.localScale = new Vector3(-1, 1, 1);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Simple ground detection
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
     }
 }

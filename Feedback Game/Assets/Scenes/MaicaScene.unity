@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 620333599}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189,6 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 10
+  jumpForce: 10
 --- !u!212 &620333597
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -289,7 +290,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &909921536
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +336,7 @@ GameObject:
   - component: {fileID: 1323637724}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
