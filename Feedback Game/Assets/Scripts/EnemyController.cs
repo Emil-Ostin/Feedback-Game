@@ -5,6 +5,7 @@ public class EnemyController : MonoBehaviour
     // configurable parameters
     [Header("Enemy Stats")]
     [SerializeField] float moveSpeed = 1f;
+    [SerializeField] int damage;
 
     [Header("Ground & Ledge Detection")]
     [SerializeField] Transform ledgeCheckPosition;
@@ -19,15 +20,26 @@ public class EnemyController : MonoBehaviour
     // cached references
     Rigidbody2D enemyRigidbody;
 
+    HealthController health;
+
     void Awake()
     {
         enemyRigidbody = GetComponent<Rigidbody2D>();
+        health = FindAnyObjectByType<HealthController>();
     }
 
     void FixedUpdate()
     {
         Move();
         LedgeCheck();
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            health.Health(damage);
+        }
     }
 
     void Move()
