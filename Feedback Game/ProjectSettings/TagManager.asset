@@ -9,7 +9,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - Background
@@ -56,6 +56,9 @@ TagManager:
     locked: 0
   - name: 4Foreground
     uniqueID: 2632940365
+    locked: 0
+  - name: Front
+    uniqueID: 601402827
     locked: 0
   m_RenderingLayers:
   - Default
