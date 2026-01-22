@@ -976,7 +976,7 @@ GameObject:
   - component: {fileID: 336157719}
   - component: {fileID: 336157718}
   - component: {fileID: 336157717}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1071,6 +1071,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   moveSpeed: 2
   damage: 2
+  attackCD: 1
+  hitboxPosA: {x: 0.6, y: 0.6}
+  hitboxPosB: {x: -0.6, y: -0.6}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
   ledgeCheckPosition: {fileID: 1034197576}
   ledgeCheckLength: 1.2
   groundCheckPosition: {x: -0, y: -0.41}
@@ -4167,11 +4173,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1322421785}
   - component: {fileID: 1322421784}
-  - component: {fileID: 1322421787}
   - component: {fileID: 1322421789}
   - component: {fileID: 1322421788}
+  - component: {fileID: 1322421787}
   - component: {fileID: 1322421790}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4350,7 +4356,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059504f250b0bac4d9bb1262b986e075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthController
-  healthAmount: 10
+  startHealth: 10
+  currentHealth: 0
+  isDead: 0
 --- !u!1 &1396498286
 GameObject:
   m_ObjectHideFlags: 0

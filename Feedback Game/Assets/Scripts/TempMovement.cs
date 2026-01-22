@@ -7,9 +7,12 @@ public class TempMovement : MonoBehaviour
 
     Transform playerTransform;
 
+    HealthController health;
+
     void Awake()
     {
         playerTransform = GetComponent<Transform>();
+        health = GetComponent<HealthController>();
     }
 
     void Start()
@@ -24,6 +27,8 @@ public class TempMovement : MonoBehaviour
 
     void HandleMove()
     {
+        if (health.isDead == true) { return; }
+
         transform.Translate(Input.GetAxis("Horizontal") * moveSpeed, Input.GetAxis("Vertical") * moveSpeed, 0);
     }
 }
