@@ -1,8 +1,8 @@
-using System.Collections;
 using UnityEngine;
-
 public class PickUpSpawner : MonoBehaviour
 {
+    [SerializeField] private float angle; // force direction. the angle of the force in degrees
+    [SerializeField] private float force; // force amount that will be added 
     [SerializeField] GameObject pickUpPrefab;
     [SerializeField] GameObject destroyParticle;
     [SerializeField] GameObject[] pickUpInstances;
@@ -37,7 +37,16 @@ public class PickUpSpawner : MonoBehaviour
             spawnPosition = Random.Range(spawnX, spawnX + spawnBoundary);
 
             GameObject thisInstanceOfPrefab = Instantiate(pickUpPrefab, new Vector2(spawnPosition, spawnCenter.position.y), Quaternion.identity);
+            Rigidbody2D pickupBodyInstance = thisInstanceOfPrefab.GetComponent<Rigidbody2D>();
+
+            pickupBodyInstance.AddForce
+                (new Vector2
+                (Mathf.Cos(angle * Mathf.Deg2Rad) * force, 
+                Mathf.Sin(angle * Mathf.Deg2Rad) * force), 
+                ForceMode2D.Impulse);
+            
             Debug.Log("intanciated " + thisInstanceOfPrefab.name);
+            
             Invoke("DespawnPickup", despawnTime);
         }
         else { return; }

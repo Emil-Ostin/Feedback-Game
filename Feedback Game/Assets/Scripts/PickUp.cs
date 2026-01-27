@@ -13,7 +13,6 @@ public class PickUp : MonoBehaviour
 
     SpriteRenderer spriteRenderer;
     Color color;
-    Rigidbody myBody;
 
     enum PickUpEffects
     {heal, strength, speed};
@@ -21,7 +20,6 @@ public class PickUp : MonoBehaviour
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        myBody = GetComponent<Rigidbody>();
         enumLength = System.Enum.GetValues(typeof(PickUpEffects)).Length;
         sparkles.Play();
     }

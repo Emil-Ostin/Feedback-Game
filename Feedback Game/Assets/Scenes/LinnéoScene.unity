@@ -346,6 +346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da1469b4e29ca51439b752a172d0c9f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickUpSpawner
+  angle: 205
+  force: 20
   pickUpPrefab: {fileID: 6680464123726367528, guid: 50421b27ea598e343b9e26b5a116dd63, type: 3}
   destroyParticle: {fileID: 669407010258948434, guid: c1864b1324390b848aae31ef22bd7eab, type: 3}
   pickUpInstances: []
