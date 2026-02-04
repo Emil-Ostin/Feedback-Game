@@ -1,3 +1,4 @@
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -6,6 +7,11 @@ public class EnemyController : MonoBehaviour
     [Header("Enemy Stats")]
     [SerializeField] float moveSpeed = 1f;
     [SerializeField] int damage;
+    [SerializeField] float attackCD = 1f;
+    [SerializeField] Vector2 hitboxPosA;
+    [SerializeField] Vector2 hitboxPosB;
+    [SerializeField] LayerMask playerLayer;
+    float nextHit;
 
     [Header("Ground & Ledge Detection")]
     [SerializeField] Transform ledgeCheckPosition;
@@ -32,13 +38,20 @@ public class EnemyController : MonoBehaviour
     {
         Move();
         LedgeCheck();
+
+        OnAttack();
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    void OnAttack()
     {
-        if (other.gameObject.CompareTag("Player"))
+        Collider2D hitbox = Physics2D.OverlapArea(transform.position + (Vector3)hitboxPosA, transform.position + (Vector3)hitboxPosB, playerLayer);
+
+        if (hitbox && Time.time > nextHit)
         {
+            Debug.Log("Hit");
             health.Health(damage);
+
+            nextHit = Time.time + attackCD;
         }
     }
 
@@ -91,5 +104,11 @@ public class EnemyController : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawLine(ledgeCheckPosition.position, new Vector3(ledgeCheckPosition.position.x, ledgeCheckPosition.position.y - ledgeCheckLength));
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(transform.position + new Vector3(hitboxPosA.x, hitboxPosA.y, 0), transform.position + new Vector3(hitboxPosA.x, -hitboxPosA.y, 0));
+        Gizmos.DrawLine(transform.position + new Vector3(hitboxPosB.x, hitboxPosB.y, 0), transform.position + new Vector3(hitboxPosA.x, -hitboxPosA.y, 0));
+        Gizmos.DrawLine(transform.position + new Vector3(hitboxPosB.x, hitboxPosB.y, 0), transform.position + new Vector3(hitboxPosB.x, -hitboxPosB.y, 0));
+        Gizmos.DrawLine(transform.position + new Vector3(hitboxPosA.x, hitboxPosA.y, 0), transform.position + new Vector3(hitboxPosB.x, -hitboxPosB.y, 0));
     }
 }

@@ -2,15 +2,19 @@ using UnityEngine;
 
 public class HealthController : MonoBehaviour
 {
-    [SerializeField] int healthAmount;
+    [SerializeField] int startHealth;
+    public int currentHealth;
+    public bool isDead = false;
+
+    private void Awake()
+    {
+        currentHealth = startHealth;
+    }
 
     public void Health(int damageAmount)
     {
-        if (healthAmount <= 0)
-        {
-            Debug.Log("Death");
-        }
+        currentHealth -= damageAmount;
 
-        healthAmount -= damageAmount;
+        if (currentHealth <= 0) { isDead = true; }
     }
 }
