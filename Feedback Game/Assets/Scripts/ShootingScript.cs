@@ -6,6 +6,7 @@ public class ShootingScript : MonoBehaviour
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] Transform firePoint;
 
+    [SerializeField] ParticleSystem muzzleflashParticle;
     [SerializeField] GameObject weapon;
     public float gunAngle;
 
@@ -43,6 +44,7 @@ public class ShootingScript : MonoBehaviour
 
     void Shoot()
     {
+        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 

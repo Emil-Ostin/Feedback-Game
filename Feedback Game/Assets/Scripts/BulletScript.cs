@@ -1,16 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
 
 
 public class BulletScript : MonoBehaviour
 {
-  [SerializeField] public float BulletSpeed = 20f;
-  [SerializeField]  public float BulletDamage = 5f;
+    [Header("Gun Stats")]
+    [SerializeField] public float BulletSpeed = 20f;
+    [SerializeField] public float BulletDamage = 5f;
+    [SerializeField] float bulletLifetime = 1.5f;
+
+    [SerializeField] ParticleSystem hitVFXPrefab;
+
     public Rigidbody2D BulletRb;
     float nextHit;
-    [SerializeField] float bulletLife;
 
     HealthController health;
 
@@ -20,26 +22,30 @@ public class BulletScript : MonoBehaviour
         BulletRb = GetComponent<Rigidbody2D>();
     }
 
+    private void Awake()
+    {
+        Invoke("Destroy", bulletLifetime);
+    }
+    private void Destroy() { Destroy(gameObject); }
+
+    private void FixedUpdate()
+    {
+        BulletRb.linearVelocity = transform.right * BulletSpeed;
+    }
+
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
         health.Health((int)BulletDamage);
+        Instantiate(hitVFXPrefab, collision.transform.position, Quaternion.identity);
+        Debug.Log(collision);
     }
-    private void FixedUpdate()
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        BulletRb.linearVelocity = transform.right * BulletSpeed;
-
-
-        if (Time.time > bulletLife)
-        {
-            Destroy(gameObject);
-            //nextHit = Time.time + bulletLife;
-        }
+        Instantiate(hitVFXPrefab, collision.transform.position, Quaternion.identity);
+        Debug.Log(collision);
     }
-
-    
-    
- 
 }
 
 

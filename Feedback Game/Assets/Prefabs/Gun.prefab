@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9205236661702750117}
   - component: {fileID: 3179810723587619806}
   - component: {fileID: 8924328490429579619}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShootingScript
   bulletPrefab: {fileID: 2419263528329362370, guid: e0b2a80294e42244687578329943b7af, type: 3}
   firePoint: {fileID: 8090038832065897177}
+  muzzleflashParticle: {fileID: 7902971354101433859, guid: ca6b24b540726544ca8184ee46ff2332, type: 3}
   weapon: {fileID: 0}
   gunAngle: 0
 --- !u!1 &7929265614446106196
@@ -118,7 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8090038832065897177}
   - component: {fileID: 5267179309044829677}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
