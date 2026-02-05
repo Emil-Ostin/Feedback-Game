@@ -1,40 +1,65 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
 
 public class ShootingScript : MonoBehaviour
 {
-    [SerializeField] GameObject Gun;
-    [SerializeField]
+    [SerializeField] GameObject bulletPrefab;
+    [SerializeField] Transform firePoint;
 
+    [SerializeField] GameObject weapon;
+    public float gunAngle;
 
-   // [SerializeField] InputAction fire1;
-   // [SerializeField] InputAction fire2;
+    Camera cam;
 
-    void Start()
+    private void Awake()
     {
-
+        cam = Camera.main;
     }
-
-    private void FixedUpdate()
-    {
-   //     HandleShooting();
-    }
-
-    private void OnEnable()
-    {
-       // fire1.Enable();
-        //fire2.Enable();
-    }
-
 
     void Update()
     {
+        AimAtMouse();
+        FlipGun();
 
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            Shoot();
+        }
     }
 
+    void AimAtMouse()
+    {
+        Vector3 mouseWorldPos =
+            Camera.main.ScreenToWorldPoint(new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, 10));
+        mouseWorldPos.z = 0f;
+        Debug.Log(Camera.main.ScreenToWorldPoint(new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, 10)));
 
-   // public void HandleShooting();
+        Vector2 direction = mouseWorldPos - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
 
+        gunAngle = angle;
+    }
+
+    void Shoot()
+    {
+        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+    }
+
+    void FlipGun()
+    {
+        Vector3 mousePos = cam.ScreenToWorldPoint(new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, 10));
+
+        if (mousePos.x > transform.position.x)
+        {
+            transform.localRotation = Quaternion.Euler(0, 0, gunAngle);
+            weapon.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            transform.localRotation = Quaternion.Euler(0, 180, gunAngle);
+            weapon.transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+    }
 }
+

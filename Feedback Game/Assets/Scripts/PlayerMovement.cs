@@ -3,12 +3,16 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    ShootingScript shootingScript;
+
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float jumpForce = 12f;
 
     [SerializeField] float fallGravityMultiplier = 2.5f;
     [SerializeField] float lowJumpMultiplier = 2f;
 
+    [SerializeField] Vector2 groundCheckPosition;
+    [SerializeField] Vector2 groundCheckSize;
 
     Rigidbody2D rb;
     Camera cam;
@@ -59,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        if (jumpAction.WasPressedThisFrame() && isGrounded)
+        if (jumpAction.WasPressedThisFrame() && CheckGrounded())
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             isGrounded = false;
@@ -83,20 +87,25 @@ public class PlayerMovement : MonoBehaviour
 
     void FlipPlayer()
     {
-        Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mousePos = cam.ScreenToWorldPoint(new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, 10));
 
         if (mousePos.x > transform.position.x)
-            transform.localScale = new Vector3(1, 1, 1);
+        {
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
         else
-            transform.localScale = new Vector3(-1, 1, 1);
+        {
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    bool CheckGrounded()
     {
-        // Simple ground detection
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
+        return Physics2D.OverlapBox(transform.position + (Vector3)groundCheckPosition, groundCheckSize, 0);
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireCube(transform.position + (Vector3)groundCheckPosition, groundCheckSize);
     }
 }
