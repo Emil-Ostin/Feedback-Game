@@ -2,18 +2,20 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Ground
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Background
+  - Player
+  - Enemy
   - 
   - 
   - 
@@ -41,3 +43,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: 1Sky
+    uniqueID: 1144498983
+    locked: 0
+  - name: 2Cloud
+    uniqueID: 2222285933
+    locked: 0
+  - name: 3Background
+    uniqueID: 2603490757
+    locked: 0
+  - name: Player
+    uniqueID: 282460647
+    locked: 0
+  - name: 4Foreground
+    uniqueID: 2632940365
+    locked: 0
+  - name: Front
+    uniqueID: 601402827
+    locked: 0
+  m_RenderingLayers:
+  - Default
