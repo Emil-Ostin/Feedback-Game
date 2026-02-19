@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Vector2 groundCheckPosition;
     [SerializeField] Vector2 groundCheckSize;
 
+    [SerializeField] LayerMask groundCheckLayerMask;
+
     Rigidbody2D rb;
     Camera cam;
 
@@ -101,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
 
     bool CheckGrounded()
     {
-        return Physics2D.OverlapBox(transform.position + (Vector3)groundCheckPosition, groundCheckSize, 0);
+        return Physics2D.OverlapBox(transform.position + (Vector3)groundCheckPosition, groundCheckSize, 0, groundCheckLayerMask);
     }
     private void OnDrawGizmos()
     {

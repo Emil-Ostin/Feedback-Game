@@ -48,6 +48,11 @@ public class ShootingScript : MonoBehaviour
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 
+    void SpawnMuzzleFlashParticle()
+    {
+
+    }
+
     void FlipGun()
     {
         Vector3 mousePos = cam.ScreenToWorldPoint(new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, 10));
