@@ -1,0 +1,417 @@
+fileFormatVersion: 2
+guid: ac6b76e273bb81b4580a56a820ade190
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -732659324844325961
+    second: "MegaGr\xE4s_0"
+  - first:
+      213: -4083070019282345749
+    second: "MegaGr\xE4s_1"
+  - first:
+      213: -3391444670834983083
+    second: "MegaGr\xE4s_2"
+  - first:
+      213: -7023309678108991352
+    second: "MegaGr\xE4s_3"
+  - first:
+      213: 9189698698972881844
+    second: "MegaGr\xE4s_4"
+  - first:
+      213: -4107091441212453624
+    second: "MegaGr\xE4s_5"
+  - first:
+      213: -6954498965655628472
+    second: "MegaGr\xE4s_6"
+  - first:
+      213: -4242616100138022551
+    second: "MegaGr\xE4s_7"
+  - first:
+      213: -6087340062934330395
+    second: "MegaGr\xE4s_8"
+  - first:
+      213: -2201182426935399865
+    second: "MegaGr\xE4s_9"
+  - first:
+      213: -9207411874702957195
+    second: "MegaGr\xE4s_10"
+  - first:
+      213: 5912617297815496036
+    second: "MegaGr\xE4s_11"
+  - first:
+      213: 2057906316137799419
+    second: "MegaGr\xE4s_12"
+  - first:
+      213: -9044395918139151125
+    second: "MegaGr\xE4s_13"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "MegaGr\xE4s_0"
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 73
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3c641d93215d5f0800000000000000
+      internalID: -732659324844325961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MegaGr\xE4s_1"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 73
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0e0a353750657c0800000000000000
+      internalID: -4083070019282345749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MegaGr\xE4s_2"
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 80
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f3d7f5a0b2fe0d0800000000000000
+      internalID: -3391444670834983083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MegaGr\xE4s_3"
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 39
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88020c01f01388e90800000000000000
+      internalID: -7023309678108991352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MegaGr\xE4s_4"
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 41
+        width: 5
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3e521174e588f70800000000000000
+      internalID: 9189698698972881844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MegaGr\xE4s_5"
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 41
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d0c72381ea007c0800000000000000
+      internalID: -4107091441212453624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MegaGr\xE4s_6"
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 41
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84556498908ac7f90800000000000000
+      internalID: -6954498965655628472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MegaGr\xE4s_7"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 73
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9698be0a2233f15c0800000000000000
+      internalID: -4242616100138022551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MegaGr\xE4s_8"
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 38
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e39bc1077c658ba0800000000000000
+      internalID: -6087340062934330395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MegaGr\xE4s_9"
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 39
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74aeeacbe34d371e0800000000000000
+      internalID: -2201182426935399865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MegaGr\xE4s_13"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beca25be4d9db7280800000000000000
+      internalID: -9044395918139151125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ac375ad8e36502d4180e32e99b294d9f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "MegaGr\xE4s_0": -732659324844325961
+      "MegaGr\xE4s_1": -4083070019282345749
+      "MegaGr\xE4s_10": -9207411874702957195
+      "MegaGr\xE4s_11": 5912617297815496036
+      "MegaGr\xE4s_12": 2057906316137799419
+      "MegaGr\xE4s_13": -9044395918139151125
+      "MegaGr\xE4s_14": -1487781352
+      "MegaGr\xE4s_15": 1264744461
+      "MegaGr\xE4s_2": -3391444670834983083
+      "MegaGr\xE4s_3": -7023309678108991352
+      "MegaGr\xE4s_4": 9189698698972881844
+      "MegaGr\xE4s_5": -4107091441212453624
+      "MegaGr\xE4s_6": -6954498965655628472
+      "MegaGr\xE4s_7": -4242616100138022551
+      "MegaGr\xE4s_8": -6087340062934330395
+      "MegaGr\xE4s_9": -2201182426935399865
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
