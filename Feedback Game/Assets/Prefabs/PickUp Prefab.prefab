@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9123267284984479258}
   - component: {fileID: 4792875239847517968}
-  - component: {fileID: 7328640465514311212}
   - component: {fileID: 7540479885904570301}
+  - component: {fileID: 1596854461635348892}
   - component: {fileID: -5700743904517123980}
   - component: {fileID: 1709770704725098086}
   m_Layer: 0
@@ -96,8 +96,35 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7328640465514311212
-BoxCollider2D:
+--- !u!50 &7540479885904570301
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6680464123726367528}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0.5
+  m_AngularDamping: 0.1
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &1596854461635348892
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -131,44 +158,8 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.8, y: 0.8}
-  m_EdgeRadius: 0
---- !u!50 &7540479885904570301
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6680464123726367528}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Size: {x: 0.6, y: 0.6}
+  m_Direction: 1
 --- !u!96 &-5700743904517123980
 TrailRenderer:
   serializedVersion: 3
@@ -304,9 +295,9 @@ MonoBehaviour:
   sparkles: {fileID: 4020912681011802231}
   shootAngle: {x: 1, y: 1}
   sprite:
-  - {fileID: 2041343774652378626, guid: 3d9b3a9320f30c541976e13712dc91cc, type: 3}
-  - {fileID: 5617527922789716049, guid: d0944a01d52089143a1a46f16d97f5ee, type: 3}
-  - {fileID: -1503015222539506420, guid: 73a60d355bb97b344935898e4ca1ce00, type: 3}
+  - {fileID: 7734659146289569069, guid: 402f0ede882e5354299593c83ff88fb5, type: 3}
+  - {fileID: 1349990903797661641, guid: a5b7a7dac6e7f4447b064e530895ef11, type: 3}
+  - {fileID: -4947958427724445172, guid: 0ab1e89c1b4de32458d785afdb14a593, type: 3}
   pickupColor:
   - {r: 1, g: 0.25471687, b: 0.5497736, a: 1}
   - {r: 0.82641506, g: 0.24058354, b: 0.16060515, a: 1}
@@ -322,6 +313,10 @@ PrefabInstance:
     - target: {fileID: 669407010258948434, guid: c1864b1324390b848aae31ef22bd7eab, type: 3}
       propertyPath: m_Name
       value: Particle Prefab 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8502211780232302077, guid: c1864b1324390b848aae31ef22bd7eab, type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9202130984795778085, guid: c1864b1324390b848aae31ef22bd7eab, type: 3}
       propertyPath: m_LocalScale.x

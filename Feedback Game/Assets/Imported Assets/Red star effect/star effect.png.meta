@@ -1,0 +1,1359 @@
+fileFormatVersion: 2
+guid: e4745e7b639469c49a54a5fc9c4e20af
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9095386610525687176
+    second: star effect_0
+  - first:
+      213: 5082438116629935724
+    second: star effect_1
+  - first:
+      213: -2462708446126442482
+    second: star effect_2
+  - first:
+      213: -5049957957889679255
+    second: star effect_3
+  - first:
+      213: 7703702637437097106
+    second: star effect_4
+  - first:
+      213: -6313347845403782035
+    second: star effect_5
+  - first:
+      213: 2101354673774011969
+    second: star effect_6
+  - first:
+      213: 5953898297738298605
+    second: star effect_7
+  - first:
+      213: -6699793670735024878
+    second: star effect_8
+  - first:
+      213: 1496841190004472162
+    second: star effect_9
+  - first:
+      213: 2496006159850224647
+    second: star effect_10
+  - first:
+      213: 2873565332132635105
+    second: star effect_11
+  - first:
+      213: 9083077732680672236
+    second: star effect_12
+  - first:
+      213: 7228143746649863561
+    second: star effect_13
+  - first:
+      213: 7834851203486500906
+    second: star effect_14
+  - first:
+      213: -9205854171723500227
+    second: star effect_15
+  - first:
+      213: -7019775619472397331
+    second: star effect_16
+  - first:
+      213: -2288957846696945601
+    second: star effect_17
+  - first:
+      213: -7129241671854988323
+    second: star effect_18
+  - first:
+      213: -4411318414076532659
+    second: star effect_19
+  - first:
+      213: -8366627325056071247
+    second: star effect_20
+  - first:
+      213: -7248827969442738716
+    second: star effect_21
+  - first:
+      213: 2566560412474244858
+    second: star effect_22
+  - first:
+      213: 3694213065017913674
+    second: star effect_23
+  - first:
+      213: -4457899520991637831
+    second: star effect_24
+  - first:
+      213: -7948965315540426505
+    second: star effect_25
+  - first:
+      213: -5667241905904944921
+    second: star effect_26
+  - first:
+      213: -2783471571996545718
+    second: star effect_27
+  - first:
+      213: -1034105844194651181
+    second: star effect_28
+  - first:
+      213: 142097629745576730
+    second: star effect_29
+  - first:
+      213: 7085608475981564455
+    second: star effect_30
+  - first:
+      213: -4959372737585354624
+    second: star effect_31
+  - first:
+      213: -5135693837037152384
+    second: star effect_32
+  - first:
+      213: -3179862818650578754
+    second: star effect_33
+  - first:
+      213: 2701035652715448847
+    second: star effect_34
+  - first:
+      213: -6959202290677706368
+    second: star effect_35
+  - first:
+      213: 6374769727839789269
+    second: star effect_36
+  - first:
+      213: -9138590066906842098
+    second: star effect_37
+  - first:
+      213: 8002084968783304297
+    second: star effect_38
+  - first:
+      213: -3617371116852462567
+    second: star effect_39
+  - first:
+      213: -7079931121941508901
+    second: star effect_40
+  - first:
+      213: -6153346157504524376
+    second: star effect_41
+  - first:
+      213: 8069016187679805476
+    second: star effect_42
+  - first:
+      213: 3260035279350263927
+    second: star effect_43
+  - first:
+      213: 5906114263418071823
+    second: star effect_44
+  - first:
+      213: -1784821489570700936
+    second: star effect_45
+  - first:
+      213: -242399131902666964
+    second: star effect_46
+  - first:
+      213: -7245332258440002525
+    second: star effect_47
+  - first:
+      213: -6328768738682420486
+    second: star effect_48
+  - first:
+      213: 4753377005730943062
+    second: star effect_49
+  - first:
+      213: 1669752165930044439
+    second: star effect_50
+  - first:
+      213: 6264009372645042960
+    second: star effect_51
+  - first:
+      213: -7763647458943298228
+    second: star effect_52
+  - first:
+      213: 7508240715638846257
+    second: star effect_53
+  - first:
+      213: 6347442092191644217
+    second: star effect_54
+  - first:
+      213: -4710920007239337042
+    second: star effect_55
+  - first:
+      213: 5663587331125934967
+    second: star effect_56
+  - first:
+      213: 4594598072593845092
+    second: star effect_57
+  - first:
+      213: 256956074640334752
+    second: star effect_58
+  - first:
+      213: -8412591539622559041
+    second: star effect_59
+  - first:
+      213: 6137461943375389056
+    second: star effect_60
+  - first:
+      213: -3783094996661541451
+    second: star effect_61
+  - first:
+      213: 2401407663753933148
+    second: star effect_62
+  - first:
+      213: -1954649881267822477
+    second: star effect_63
+  - first:
+      213: -712120878265935112
+    second: star effect_64
+  - first:
+      213: 8383804566197940273
+    second: star effect_65
+  - first:
+      213: 1393995910238708938
+    second: star effect_66
+  - first:
+      213: -102799474264038006
+    second: star effect_67
+  - first:
+      213: -4538093801646264273
+    second: star effect_68
+  - first:
+      213: -5087850412860774418
+    second: star effect_69
+  - first:
+      213: 3889250583467022759
+    second: star effect_70
+  - first:
+      213: -486902839773112183
+    second: star effect_71
+  - first:
+      213: -2729638627462997360
+    second: star effect_72
+  - first:
+      213: -1800188844412428164
+    second: star effect_73
+  - first:
+      213: -7186241113488225772
+    second: star effect_74
+  - first:
+      213: -2092719129763042529
+    second: star effect_75
+  - first:
+      213: 2052473747391668087
+    second: star effect_76
+  - first:
+      213: -393153957793362140
+    second: star effect_77
+  - first:
+      213: 4900606167036777069
+    second: star effect_78
+  - first:
+      213: 2387631289038764198
+    second: star effect_79
+  - first:
+      213: -6305444498734755413
+    second: star effect_80
+  - first:
+      213: -5506026320811942433
+    second: star effect_81
+  - first:
+      213: -2443743795206292600
+    second: star effect_82
+  - first:
+      213: -8978251507021576966
+    second: star effect_83
+  - first:
+      213: -984065236327788071
+    second: star effect_84
+  - first:
+      213: -5448961095610962814
+    second: star effect_85
+  - first:
+      213: 4853904662945151974
+    second: star effect_86
+  - first:
+      213: -54260964891565802
+    second: star effect_87
+  - first:
+      213: 8218266701664167149
+    second: star effect_88
+  - first:
+      213: 432305937156145271
+    second: star effect_89
+  - first:
+      213: -6965520534799115763
+    second: star effect_90
+  - first:
+      213: 3858300167882080538
+    second: star effect_91
+  - first:
+      213: 6783732919973910506
+    second: star effect_92
+  - first:
+      213: -8166157054909312967
+    second: star effect_93
+  - first:
+      213: 4677457591055919230
+    second: star effect_94
+  - first:
+      213: -5608191872244712387
+    second: star effect_95
+  - first:
+      213: -1500808525174015967
+    second: star effect_96
+  - first:
+      213: 2114218606312453743
+    second: star effect_97
+  - first:
+      213: -5394070016327781584
+    second: star effect_98
+  - first:
+      213: -3829782066973053480
+    second: star effect_99
+  - first:
+      213: -5376035921962158045
+    second: star effect_100
+  - first:
+      213: 6026493442202898065
+    second: star effect_101
+  - first:
+      213: 5613786004964699990
+    second: star effect_102
+  - first:
+      213: 781505728139517307
+    second: star effect_103
+  - first:
+      213: -7828546282073089596
+    second: star effect_104
+  - first:
+      213: 7399324872292617044
+    second: star effect_105
+  - first:
+      213: 4649130199836058171
+    second: star effect_106
+  - first:
+      213: 1401568168761247281
+    second: star effect_107
+  - first:
+      213: 9042716792285536062
+    second: star effect_108
+  - first:
+      213: 8134696955447652461
+    second: star effect_109
+  - first:
+      213: 3143784807323400857
+    second: star effect_110
+  - first:
+      213: 4335650430501037376
+    second: star effect_111
+  - first:
+      213: 8479445475305352180
+    second: star effect_112
+  - first:
+      213: -5963268545684244372
+    second: star effect_113
+  - first:
+      213: 6002682262403324428
+    second: star effect_114
+  - first:
+      213: -1078974559640236478
+    second: star effect_115
+  - first:
+      213: -1617181178425865473
+    second: star effect_116
+  - first:
+      213: 1090492301389660804
+    second: star effect_117
+  - first:
+      213: 6336249005274945186
+    second: star effect_118
+  - first:
+      213: 4537237335943454738
+    second: star effect_119
+  - first:
+      213: 961528093691925834
+    second: star effect_120
+  - first:
+      213: 9141317593319164457
+    second: star effect_121
+  - first:
+      213: 7270896648659433550
+    second: star effect_122
+  - first:
+      213: -4488210559154614182
+    second: star effect_123
+  - first:
+      213: 6342934404154929544
+    second: star effect_124
+  - first:
+      213: 220229489414802174
+    second: star effect_125
+  - first:
+      213: 7870209615873502465
+    second: star effect_126
+  - first:
+      213: 2639375308847035530
+    second: star effect_127
+  - first:
+      213: 4736458184409881052
+    second: star effect_128
+  - first:
+      213: 4602018761828538580
+    second: star effect_129
+  - first:
+      213: 5974291711297137661
+    second: star effect_130
+  - first:
+      213: -206934949131068337
+    second: star effect_131
+  - first:
+      213: 4461400693558735307
+    second: star effect_132
+  - first:
+      213: -2812415928914923437
+    second: star effect_133
+  - first:
+      213: -4634484572025531536
+    second: star effect_134
+  - first:
+      213: 5460511832529735016
+    second: star effect_135
+  - first:
+      213: -3337809068580599298
+    second: star effect_136
+  - first:
+      213: 561934686026681978
+    second: star effect_137
+  - first:
+      213: 5883018846148275242
+    second: star effect_138
+  - first:
+      213: -1372955785969244764
+    second: star effect_139
+  - first:
+      213: -286789113273707252
+    second: star effect_140
+  - first:
+      213: -6339101644581417355
+    second: star effect_141
+  - first:
+      213: -8680960269123051308
+    second: star effect_142
+  - first:
+      213: 3751927456804283785
+    second: star effect_143
+  - first:
+      213: 98151724843220446
+    second: star effect_144
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: star effect_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1512
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d4a3fceed493e70800000000000000
+      internalID: 9095386610525687176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_1
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1512
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66f1a60a82788640800000000000000
+      internalID: 5082438116629935724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1512
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e08774b57b3b2ddd0800000000000000
+      internalID: -2462708446126442482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_3
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1512
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960245d3ef1fae9b0800000000000000
+      internalID: -5049957957889679255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_4
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1512
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2949da79bbc09ea60800000000000000
+      internalID: 7703702637437097106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_5
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1512
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d64da3b859b7268a0800000000000000
+      internalID: -6313347845403782035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_6
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 1512
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146286d31f2892d10800000000000000
+      internalID: 2101354673774011969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1134
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de48e79e4fe70a250800000000000000
+      internalID: 5953898297738298605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_8
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1134
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21dad6b472d8503a0800000000000000
+      internalID: -6699793670735024878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_9
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1134
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269b367b129d5c410800000000000000
+      internalID: 1496841190004472162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_10
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1134
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c3f03c06893a220800000000000000
+      internalID: 2496006159850224647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_11
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1134
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1a4acd174f0e720800000000000000
+      internalID: 2873565332132635105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_12
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1134
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce321bbd2139d0e70800000000000000
+      internalID: 9083077732680672236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_13
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 1134
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 985b684f0768f4460800000000000000
+      internalID: 7228143746649863561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 756
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28cad3a8abfabc60800000000000000
+      internalID: 7834851203486500906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_15
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 756
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d357f50d76c3e3080800000000000000
+      internalID: -9205854171723500227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_16
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 756
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb6666344fb49e90800000000000000
+      internalID: -7019775619472397331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_17
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 756
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3819c147fcfb30e0800000000000000
+      internalID: -2288957846696945601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_18
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 756
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3eb27c878df0d90800000000000000
+      internalID: -7129241671854988323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_19
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 756
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4824d94649d7c2c0800000000000000
+      internalID: -4411318414076532659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_20
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 756
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9c4f1b6c4c3eb80800000000000000
+      internalID: -8366627325056071247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 378
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed03732e5df66b90800000000000000
+      internalID: -7248827969442738716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_22
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 378
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe7b10d8114e9320800000000000000
+      internalID: 2566560412474244858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_23
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 378
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41fff8b53b744330800000000000000
+      internalID: 3694213065017913674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_24
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 378
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bec8ee210c5222c0800000000000000
+      internalID: -4457899520991637831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_25
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 378
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0ef43392a9fa190800000000000000
+      internalID: -7948965315540426505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_26
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 378
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8f35e4389e951b0800000000000000
+      internalID: -5667241905904944921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_27
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 378
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d6fbc4a5f1f59d0800000000000000
+      internalID: -2783471571996545718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d35f90b63e16a1f0800000000000000
+      internalID: -1034105844194651181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_29
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1bf8689a05d8f100800000000000000
+      internalID: 142097629745576730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_30
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ac0642e53255260800000000000000
+      internalID: 7085608475981564455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_31
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 0
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088e77365c4cc2bb0800000000000000
+      internalID: -4959372737585354624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_32
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 0
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087dc305aa95ab8b0800000000000000
+      internalID: -5135693837037152384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_33
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb02cd33d9bded3d0800000000000000
+      internalID: -3179862818650578754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star effect_34
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 0
+        width: 432
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a05cd8d910c7520800000000000000
+      internalID: 2701035652715448847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4f9ed86017b04df40985d69498fa87a6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":432.0,"y":378.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      star effect_0: 9095386610525687176
+      star effect_1: 5082438116629935724
+      star effect_10: 2496006159850224647
+      star effect_11: 2873565332132635105
+      star effect_12: 9083077732680672236
+      star effect_13: 7228143746649863561
+      star effect_14: 7834851203486500906
+      star effect_15: -9205854171723500227
+      star effect_16: -7019775619472397331
+      star effect_17: -2288957846696945601
+      star effect_18: -7129241671854988323
+      star effect_19: -4411318414076532659
+      star effect_2: -2462708446126442482
+      star effect_20: -8366627325056071247
+      star effect_21: -7248827969442738716
+      star effect_22: 2566560412474244858
+      star effect_23: 3694213065017913674
+      star effect_24: -4457899520991637831
+      star effect_25: -7948965315540426505
+      star effect_26: -5667241905904944921
+      star effect_27: -2783471571996545718
+      star effect_28: -1034105844194651181
+      star effect_29: 142097629745576730
+      star effect_3: -5049957957889679255
+      star effect_30: 7085608475981564455
+      star effect_31: -4959372737585354624
+      star effect_32: -5135693837037152384
+      star effect_33: -3179862818650578754
+      star effect_34: 2701035652715448847
+      star effect_4: 7703702637437097106
+      star effect_5: -6313347845403782035
+      star effect_6: 2101354673774011969
+      star effect_7: 5953898297738298605
+      star effect_8: -6699793670735024878
+      star effect_9: 1496841190004472162
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

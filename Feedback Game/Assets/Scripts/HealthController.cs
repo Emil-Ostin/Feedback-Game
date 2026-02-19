@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HealthController : MonoBehaviour
 {
-    [SerializeField] int startHealth;
+    [SerializeField] public int startHealth;
     public int currentHealth;
     public bool isDead = false;
 

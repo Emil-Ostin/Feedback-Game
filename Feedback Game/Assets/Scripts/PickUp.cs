@@ -59,6 +59,19 @@ public class PickUp : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (CompareTag("Player") == true)
+        {
+            HealthController healthController = new HealthController();
+            if (healthController.currentHealth < healthController.startHealth && effect == PickUpEffects.heal)
+                healthController.currentHealth = healthController.currentHealth + 1;
+
+
+        }
+        
+    }
+
     public void PickupEffect()
     {
         pickupEffect = Random.Range(0, enumLength);
