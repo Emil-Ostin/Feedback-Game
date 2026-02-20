@@ -9,7 +9,6 @@ public class BulletScript : MonoBehaviour
   [SerializeField] public float BulletSpeed = 20f;
   [SerializeField]  public float BulletDamage = 5f;
     public Rigidbody2D BulletRb;
-    float nextHit;
     [SerializeField] float bulletLife;
 
     HealthController health;
@@ -24,6 +23,7 @@ public class BulletScript : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         health.Health((int)BulletDamage);
+        Destroy(gameObject);
     }
     private void FixedUpdate()
     {
@@ -33,7 +33,6 @@ public class BulletScript : MonoBehaviour
         if (Time.time > bulletLife)
         {
             Destroy(gameObject);
-            //nextHit = Time.time + bulletLife;
         }
     }
 
