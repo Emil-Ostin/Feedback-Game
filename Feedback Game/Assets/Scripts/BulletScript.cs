@@ -5,8 +5,8 @@ using static UnityEngine.Rendering.DebugUI;
 public class BulletScript : MonoBehaviour
 {
     [Header("Gun Stats")]
-    [SerializeField] public float BulletSpeed = 20f;
-    [SerializeField] public float BulletDamage = 5f;
+    [SerializeField] public float bulletSpeed = 20f;
+    [SerializeField] public float bulletDamage = 5f;
     [SerializeField] float bulletLifetime = 1.5f;
 
     [SerializeField] ParticleSystem hitVFXPrefab;
@@ -33,13 +33,13 @@ public class BulletScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        BulletRb.linearVelocity = transform.right * BulletSpeed;
+        BulletRb.linearVelocity = transform.right * bulletSpeed;
     }
 
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        health.Health((int)BulletDamage);
+        health.Health((int)bulletDamage);
         Instantiate(hitVFXPrefab, transform.position, Quaternion.identity);
         GameObject.Destroy(gameObject);
     }

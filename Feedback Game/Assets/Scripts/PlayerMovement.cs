@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     ShootingScript shootingScript;
 
-    [SerializeField] float moveSpeed = 10f;
+    [SerializeField] public float moveSpeed = 10f;
     [SerializeField] float jumpForce = 12f;
 
     [SerializeField] float fallGravityMultiplier = 2.5f;

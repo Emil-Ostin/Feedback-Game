@@ -18,7 +18,6 @@ public class PickUpSpawner : MonoBehaviour
     int
        pickuplimit = 10;
 
-
     private void Awake()
     {
         InvokeRepeating("SpawnPickup", spawnTime, spawnTime);
@@ -34,7 +33,7 @@ public class PickUpSpawner : MonoBehaviour
         if (pickUpInstances.Length +1 <= pickuplimit)
         {
             float spawnX = spawnCenter.position.x;
-            spawnPosition = Random.Range(spawnX, spawnX + spawnBoundary);
+            spawnPosition = UnityEngine.Random.Range(spawnX, spawnX + spawnBoundary);
 
             GameObject thisInstanceOfPrefab = Instantiate(pickUpPrefab, new Vector2(spawnPosition, spawnCenter.position.y), Quaternion.identity);
             Rigidbody2D pickupBodyInstance = thisInstanceOfPrefab.GetComponent<Rigidbody2D>();
@@ -45,7 +44,7 @@ public class PickUpSpawner : MonoBehaviour
                 Mathf.Sin(angle * Mathf.Deg2Rad) * force), 
                 ForceMode2D.Impulse);
             
-            Debug.Log("intanciated " + thisInstanceOfPrefab.name);
+            //Debug.Log("intanciated " + thisInstanceOfPrefab.name);
             
             Invoke("DespawnPickup", despawnTime);
         }
@@ -59,6 +58,13 @@ public class PickUpSpawner : MonoBehaviour
             Instantiate(destroyParticle, oldestPickup.transform.position, Quaternion.identity);
 
             Destroy(oldestPickup);
+    }
+
+    public void DestroyPickup(GameObject pickup)
+    {
+        Instantiate(destroyParticle, pickup.transform.position, Quaternion.identity);
+
+        Destroy(pickup);
     }
 
     private void OnDrawGizmos()

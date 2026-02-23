@@ -29,7 +29,7 @@ public class TempMovement : MonoBehaviour
     {
         if (health.isDead == true) { return; }
 
-        if (health.takenDamage) { Debug.Log("Took Damage"); }
+        //if (health.takenDamage) { Debug.Log("Took Damage"); }
 
         transform.Translate(Input.GetAxis("Horizontal") * moveSpeed, Input.GetAxis("Vertical") * moveSpeed, 0);
     }
