@@ -5,14 +5,16 @@ TagManager:
   serializedVersion: 3
   tags:
   - Pick Up
+  - Ground
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
@@ -41,6 +43,18 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 1Sky
+    uniqueID: 3674489591
+    locked: 0
+  - name: 2Clouds
+    uniqueID: 2984321755
+    locked: 0
+  - name: 3Background
+    uniqueID: 2025095117
+    locked: 0
+  - name: 4Foreground
+    uniqueID: 3452559161
     locked: 0
   m_RenderingLayers:
   - Default

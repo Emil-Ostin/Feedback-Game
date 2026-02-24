@@ -33,7 +33,7 @@ public class ShootingScript : MonoBehaviour
         Vector3 mouseWorldPos =
             Camera.main.ScreenToWorldPoint(new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, 10));
         mouseWorldPos.z = 0f;
-        Debug.Log(Camera.main.ScreenToWorldPoint(new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, 10)));
+        //Debug.Log(Camera.main.ScreenToWorldPoint(new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, 10)));
 
         Vector2 direction = mouseWorldPos - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;

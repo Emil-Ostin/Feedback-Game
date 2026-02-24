@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -110,7 +110,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 576
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -179,8 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 866d36079005ba24ab30ab1cdf4dc12c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletScript
-  BulletSpeed: 40
-  BulletDamage: 10
+  bulletSpeed: 25
+  bulletDamage: 1
   bulletLifetime: 1.5
   hitVFXPrefab: {fileID: 8351719493578099990, guid: 817c1a16a4db1aa418fc59ac821ba5b9, type: 3}
   MuzzlleFlashVFXPrefab: {fileID: 7902971354101433859, guid: ca6b24b540726544ca8184ee46ff2332, type: 3}
@@ -237,7 +237,7 @@ TrailRenderer:
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.75
     widthCurve:
       serializedVersion: 2
       m_Curve:

@@ -26,16 +26,20 @@ public class EnemyController : MonoBehaviour
     // cached references
     Rigidbody2D enemyRigidbody;
 
-    HealthController health;
+    HealthController otherHealth;
+
+    HealthController myHealth;
 
     void Awake()
     {
         enemyRigidbody = GetComponent<Rigidbody2D>();
-        health = FindAnyObjectByType<HealthController>();
+        myHealth = GetComponent<HealthController>();
     }
 
     void FixedUpdate()
     {
+        if (myHealth.isDead == true) { return; }
+
         Move();
         LedgeCheck();
 
@@ -48,8 +52,10 @@ public class EnemyController : MonoBehaviour
 
         if (hitbox && Time.time > nextHit)
         {
+            otherHealth = hitbox.GetComponent<HealthController>();
+
             Debug.Log("Hit");
-            health.Health(damage);
+            otherHealth.Health(damage);
 
             nextHit = Time.time + attackCD;
         }

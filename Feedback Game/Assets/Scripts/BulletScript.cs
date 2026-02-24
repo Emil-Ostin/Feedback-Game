@@ -19,7 +19,7 @@ public class BulletScript : MonoBehaviour
 
     public void Start()
     {
-        health = FindAnyObjectByType<HealthController>();
+        
         BulletRb = GetComponent<Rigidbody2D>();
 
         Instantiate(MuzzlleFlashVFXPrefab, transform.position, Quaternion.identity);
@@ -39,6 +39,8 @@ public class BulletScript : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
+        health = collision.gameObject.GetComponent<HealthController>();
+
         health.Health((int)bulletDamage);
         Instantiate(hitVFXPrefab, transform.position, Quaternion.identity);
         GameObject.Destroy(gameObject);
