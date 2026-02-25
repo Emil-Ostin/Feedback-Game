@@ -12,7 +12,6 @@ public class PickUp : MonoBehaviour
 
     int enumLength, pickupEffect;
 
-    GameObject us;
     SpriteRenderer spriteRenderer;
     Color color;
 
@@ -22,7 +21,6 @@ public class PickUp : MonoBehaviour
 
     void Awake()
     {
-        us = GetComponent<GameObject>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         enumLength = System.Enum.GetValues(typeof(PickUpEffects)).Length;
         sparkles.Play();
@@ -62,26 +60,24 @@ public class PickUp : MonoBehaviour
             }
         }
     }
-
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player") == true)
         {
-            HealthController healthController = new HealthController();
+            HealthController healthController = gameObject.AddComponent<HealthController>();
             if (healthController.currentHealth < healthController.startHealth && effect == PickUpEffects.heal)
                 healthController.currentHealth = healthController.currentHealth + 1;
 
-            BulletScript bulletScript = new BulletScript();
+            BulletScript bulletScript = gameObject.AddComponent<BulletScript>();
             if (effect == PickUpEffects.strength)
                 bulletScript.bulletDamage = bulletScript.bulletDamage + strengthAdd;
 
-            PlayerMovement playerMovement = new PlayerMovement();
+            PlayerMovement playerMovement = gameObject.AddComponent<PlayerMovement>();
             if (effect == PickUpEffects.speed)
                 playerMovement.moveSpeed = playerMovement.moveSpeed + speedAdd;
-
-            //PickUpSpawner.DestroyPickup(gameObject.GetComponent<GameObject>());
         }
     }
+
 
     public void PickupEffect()
     {
