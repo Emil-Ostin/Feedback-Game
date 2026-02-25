@@ -66,7 +66,7 @@ public class PickUp : MonoBehaviour
         {
             HealthController healthController = gameObject.AddComponent<HealthController>();
             if (healthController.currentHealth < healthController.startHealth && effect == PickUpEffects.heal)
-                healthController.currentHealth = healthController.currentHealth + 1;
+                healthController.currentHealth = healthController.currentHealth ++;
 
             BulletScript bulletScript = gameObject.AddComponent<BulletScript>();
             if (effect == PickUpEffects.strength)
