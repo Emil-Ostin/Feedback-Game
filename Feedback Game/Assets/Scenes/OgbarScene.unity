@@ -780,6 +780,7 @@ MonoBehaviour:
   startHealth: 0
   currentHealth: 0
   isDead: 0
+  isPlayer: 0
 --- !u!50 &1572853545
 Rigidbody2D:
   serializedVersion: 5

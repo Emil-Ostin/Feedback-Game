@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1596854461635348892}
   - component: {fileID: -5700743904517123980}
   - component: {fileID: 1709770704725098086}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PickUp Prefab
   m_TagString: Pick Up
   m_Icon: {fileID: 0}
@@ -36,6 +36,7 @@ Transform:
   m_Children:
   - {fileID: 4432741836476322223}
   - {fileID: 5675691484210365228}
+  - {fileID: 9222724195297725942}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4792875239847517968
@@ -82,8 +83,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2025095117
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -205,8 +206,8 @@ TrailRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2025095117
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Time: 0.8
   m_PreviewTimeScale: 1
@@ -292,7 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickUp
   effect: 0
-  sparkles: {fileID: 4020912681011802231}
+  sparkles: {fileID: 4891047329449851247, guid: ffd1a7aa1c4a6024e90943510108e094, type: 3}
   shootAngle: {x: 1, y: 1}
   sprite:
   - {fileID: 7734659146289569069, guid: 402f0ede882e5354299593c83ff88fb5, type: 3}
@@ -302,6 +303,8 @@ MonoBehaviour:
   - {r: 1, g: 0.25471687, b: 0.5497736, a: 1}
   - {r: 0.82641506, g: 0.24058354, b: 0.16060515, a: 1}
   - {r: 0.30427194, g: 0.5822576, b: 0.6981132, a: 1}
+  strengthAdd: 0
+  speedAdd: 0
 --- !u!1001 &3562508063163264777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -313,6 +316,10 @@ PrefabInstance:
     - target: {fileID: 669407010258948434, guid: c1864b1324390b848aae31ef22bd7eab, type: 3}
       propertyPath: m_Name
       value: Particle Prefab 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 669407010258948434, guid: c1864b1324390b848aae31ef22bd7eab, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8502211780232302077, guid: c1864b1324390b848aae31ef22bd7eab, type: 3}
       propertyPath: playOnAwake
@@ -384,6 +391,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9202130984795778085, guid: c1864b1324390b848aae31ef22bd7eab, type: 3}
   m_PrefabInstance: {fileID: 3562508063163264777}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3695216728418507043
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9123267284984479258}
+    m_Modifications:
+    - target: {fileID: 858018836741437462, guid: d545196e777e0694c8327acfa2c3f668, type: 3}
+      propertyPath: m_Name
+      value: Healing Pickup Particle Effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527533866478752981, guid: d545196e777e0694c8327acfa2c3f668, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527533866478752981, guid: d545196e777e0694c8327acfa2c3f668, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527533866478752981, guid: d545196e777e0694c8327acfa2c3f668, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527533866478752981, guid: d545196e777e0694c8327acfa2c3f668, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527533866478752981, guid: d545196e777e0694c8327acfa2c3f668, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527533866478752981, guid: d545196e777e0694c8327acfa2c3f668, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527533866478752981, guid: d545196e777e0694c8327acfa2c3f668, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527533866478752981, guid: d545196e777e0694c8327acfa2c3f668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527533866478752981, guid: d545196e777e0694c8327acfa2c3f668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527533866478752981, guid: d545196e777e0694c8327acfa2c3f668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d545196e777e0694c8327acfa2c3f668, type: 3}
+--- !u!4 &9222724195297725942 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5527533866478752981, guid: d545196e777e0694c8327acfa2c3f668, type: 3}
+  m_PrefabInstance: {fileID: 3695216728418507043}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4769534479816539530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -395,6 +464,10 @@ PrefabInstance:
     - target: {fileID: 669407010258948434, guid: 5889c8b32ee710b46a85a8eec843af41, type: 3}
       propertyPath: m_Name
       value: Particle Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 669407010258948434, guid: 5889c8b32ee710b46a85a8eec843af41, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9202130984795778085, guid: 5889c8b32ee710b46a85a8eec843af41, type: 3}
       propertyPath: m_LocalScale.x
@@ -457,11 +530,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5889c8b32ee710b46a85a8eec843af41, type: 3}
---- !u!198 &4020912681011802231 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8502211780232302077, guid: 5889c8b32ee710b46a85a8eec843af41, type: 3}
-  m_PrefabInstance: {fileID: 4769534479816539530}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4432741836476322223 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9202130984795778085, guid: 5889c8b32ee710b46a85a8eec843af41, type: 3}
