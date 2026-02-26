@@ -8,12 +8,17 @@ public class PickUp : MonoBehaviour
     [SerializeField] Sprite[] sprite;
     [SerializeField] Color[] pickupColor;
     [SerializeField] float strengthAdd, speedAdd;
+    [SerializeField] AudioClip[] falling;
+
+    [SerializeField] GameObject destroyParticle;
 
 
     int enumLength, pickupEffect;
+    //int fallInt;
 
     GameObject us;
     SpriteRenderer spriteRenderer;
+    //AudioSource audioSource;
     Color color;
 
 
@@ -25,12 +30,20 @@ public class PickUp : MonoBehaviour
         us = GetComponent<GameObject>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         enumLength = System.Enum.GetValues(typeof(PickUpEffects)).Length;
+        //audioSource = GetComponent<AudioSource>();
         sparkles.Play();
     }
 
     void Start()
     {
         PickupEffect();
+
+        //audioSource.PlayOneShot(falling[fallInt]);
+    }
+
+    private void FixedUpdate()
+    {
+        //fallInt = Random.Range(0, falling.Length);
     }
 
     void Effects()
@@ -65,22 +78,36 @@ public class PickUp : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player") == true)
+        if (other.gameObject.CompareTag("Player"))
         {
-            HealthController healthController = new HealthController();
-            if (healthController.currentHealth < healthController.startHealth && effect == PickUpEffects.heal)
-                healthController.currentHealth = healthController.currentHealth + 1;
+            Debug.Log(destroyParticle);
+            Instantiate(destroyParticle, transform.position, Quaternion.identity);
 
-            BulletScript bulletScript = new BulletScript();
-            if (effect == PickUpEffects.strength)
-                bulletScript.bulletDamage = bulletScript.bulletDamage + strengthAdd;
+            Debug.Log("Collideee wiithh mee");
 
-            PlayerMovement playerMovement = new PlayerMovement();
-            if (effect == PickUpEffects.speed)
-                playerMovement.moveSpeed = playerMovement.moveSpeed + speedAdd;
 
+            //HealthController healthController = gameObject.AddComponent<HealthController>();
+            //if (healthController.currentHealth < healthController.startHealth && effect == PickUpEffects.heal)
+            //    healthController.currentHealth = healthController.currentHealth + 1;
+
+            //BulletScript bulletScript = gameObject.AddComponent<BulletScript>();
+            //if (effect == PickUpEffects.strength)
+            //    bulletScript.bulletDamage = bulletScript.bulletDamage + strengthAdd;
+
+            //PlayerMovement playerMovement = gameObject.AddComponent<PlayerMovement>();
+            //if (effect == PickUpEffects.speed)
+            //    playerMovement.moveSpeed = playerMovement.moveSpeed + speedAdd;
+
+          
+
+            Destroy(gameObject);
             //PickUpSpawner.DestroyPickup(gameObject.GetComponent<GameObject>());
         }
+    }
+
+    private void OnDestroy()
+    {
+        
     }
 
     public void PickupEffect()

@@ -26,6 +26,8 @@ public class PickUpSpawner : MonoBehaviour
     void FixedUpdate()
     {
         pickUpInstances = GameObject.FindGameObjectsWithTag("Pick Up");
+
+        //if (Physics2D.IsTouching(GameObject.FindGameObjectWithTag("Player"), pickUpInstances) == true)
     }
 
     void SpawnPickup()
@@ -52,7 +54,7 @@ public class PickUpSpawner : MonoBehaviour
     }
 
     void DespawnPickup()
-    { 
+    {
             GameObject oldestPickup = pickUpInstances[0];
 
             Instantiate(destroyParticle, oldestPickup.transform.position, Quaternion.identity);
@@ -66,6 +68,7 @@ public class PickUpSpawner : MonoBehaviour
 
         Destroy(pickup);
     }
+
 
     private void OnDrawGizmos()
     {

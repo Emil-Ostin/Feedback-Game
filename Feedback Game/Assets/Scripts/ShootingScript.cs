@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class ShootingScript : MonoBehaviour
 {
+    [SerializeField] GameObject cameraShake;
+
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] Transform firePoint;
 
@@ -12,9 +14,13 @@ public class ShootingScript : MonoBehaviour
 
     Camera cam;
 
+    ScreenShake shake;
+
     private void Awake()
     {
         cam = Camera.main;
+
+        shake = cameraShake.GetComponent<ScreenShake>();
     }
 
     void Update()
@@ -46,6 +52,8 @@ public class ShootingScript : MonoBehaviour
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+
+        shake.startShake = true;
     }
 
     void SpawnMuzzleFlashParticle()

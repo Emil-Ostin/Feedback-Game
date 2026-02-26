@@ -3,15 +3,15 @@ using UnityEngine;
 
 public class ScreenShake : MonoBehaviour
 {
-    public bool start = false;
+    public bool startShake = false;
     public AnimationCurve ShakeStrength;
     public float duration = 1f;
 
     private void Update()
     {
-        if (start)
+        if (startShake)
         {
-            start = false;
+            startShake = false;
             StartCoroutine(Shaking());
         }
     }

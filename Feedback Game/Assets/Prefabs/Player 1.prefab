@@ -72,6 +72,7 @@ Transform:
   m_Children:
   - {fileID: 581744403225980903}
   - {fileID: 4915947384477400095}
+  - {fileID: 1710373941194225720}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3586363998067910863
@@ -378,6 +379,61 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Step_0
   stepClip: {fileID: 8300000, guid: 38cb68a2a49e89c46bea091d75b27976, type: 3}
+--- !u!1 &5113272477410305271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1710373941194225720}
+  - component: {fileID: 8366071357249529594}
+  m_Layer: 0
+  m_Name: PickUp Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1710373941194225720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5113272477410305271}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10, y: 10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5232814816715081127}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8366071357249529594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5113272477410305271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1469b4e29ca51439b752a172d0c9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUpSpawner
+  angle: 205
+  force: 10
+  pickUpPrefab: {fileID: 6680464123726367528, guid: 50421b27ea598e343b9e26b5a116dd63, type: 3}
+  destroyParticle: {fileID: 669407010258948434, guid: c1864b1324390b848aae31ef22bd7eab, type: 3}
+  pickUpInstances: []
+  spawnCenter: {fileID: 1710373941194225720}
+  spawnBoundary: 30
+  spawnPosition: 4.77
+  despawnTime: 8
+  spawnTime: 3
+  pickuplimit: 10
 --- !u!1001 &1408978884098622345
 PrefabInstance:
   m_ObjectHideFlags: 0

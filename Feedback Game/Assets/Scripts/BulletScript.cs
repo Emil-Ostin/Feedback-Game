@@ -42,7 +42,7 @@ public class BulletScript : MonoBehaviour
         health = collision.gameObject.GetComponent<HealthController>();
 
         health.Health((int)bulletDamage);
-        Instantiate(hitVFXPrefab, transform.position, Quaternion.identity);
+        //Instantiate(hitVFXPrefab, transform.position, Quaternion.identity);
         GameObject.Destroy(gameObject);
     }
 
